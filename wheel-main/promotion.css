@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: -8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.navbar .left-nav{
+    margin-left: 20px;
+    display: flex;
+    gap: 50px;
+    font-family: "Kanit", sans-serif;
+    color: white;
+    /* background-color: red; */
+    font-size: 15px;
+}
+
+
+.navbar .right-nav{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+/* dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 0px;
+}
+
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Kanit", sans-serif;
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 50px; 
+    transition: 0.5s; 
+    
+}
+
+.dropbtn:hover{
+    background-color: rgb(161, 0, 0);
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Kanit", sans-serif;
+    transition: 0.5s;
+    text-decoration: underline;
+    /* border-radius: 10px; */
+}
+
+.dropdown-content a:hover {
+    color: red;
+}
+
+.show {
+    display: block;
+}
+
+/* FIRST CONTAINER */
+
+.first-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.first-container .slides {
+    padding: 10px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.first-container .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    /* background-color: blue; */
+}
+
+.first-container .slide img {
+    width: 90%;
+    height: 100%;
+    display: block;
+}
+.first-container .title {
+    font-family: "Kanit", sans-serif;
+    font-size: 30px;
+    position: absolute;
+    width: 87%;
+    color: white;
+    padding-left: 40px;
+    /* background-color: blue; */
+}
+
+.first-container .title h1{
+    margin-bottom: -20px;
+}
+
+.first-container .title p{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.first-container .title a{
+    font-family: "Kanit", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.first-container .title a:hover{
+    color: red;
+}
+/* ============================SECOND CONTAINER====================== */
+.second-container{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+.second-container .slider-container {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+
+
+.second-container .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.second-container .slider2 {
+    /* background-color: blue; */
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    gap: 4px;
+}
+
+
+.second-container .card {
+    min-width: 98%;
+    min-height: 350px;
+    box-sizing: border-box;
+    padding: 20px;
+    /* background-color: #fff; */
+    /* border: 1px solid #ddd; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 50px;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.second-container .content-wrapper{ 
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+
+.content-wrapper .content{
+    display: flex;
+    justify-content: center;
+    margin-left: -80px;
+}
+
+.content .left-container{
+    text-align: left;
+}
+
+/* LEFT CONTAINER */
+
+.second-container .left-container{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+
+.left-container .text-wraper{
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.left-container .text-wraper a{
+    color: white;
+    text-decoration: underline;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.left-container .text-wraper a:hover{
+    border-radius: 50px;
+}
+
+.left-container .text-wraper h1{
+    font-weight: 500;
+}
+
+/* RIGHT CONTAINER */
+
+.second-container .slider-contain{
+    padding: 10px;
+    display: flex;
+}
+.slider-contain .slider-box{
+    position: relative;
+    height: 300px;
+    width: 700px;
+    /* margin-top: 40px; */
+    overflow: hidden;
+    /* border-radius: 50px; */
+}
+
+.slider-contain .slider-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-contain .slider-box img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.slider-container button:hover{
+    background-color: grey;
+}
+
+.slider-container button.prev-btn2 {
+    margin-top: -40px;
+    left: 10px;
+}
+
+
+.slider-container button.next-btn2 {
+    margin-top: -50px;
+    right: 10px;
+}
+
+
+
+/* ============================THIRD====================== */
+
+.third-container .slides {
+    padding: 10px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.third-container .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* padding-left: 40px; */
+    /* background-color: blue; */
+}
+
+.third-container .slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.third-container .title {
+    font-family: "Kanit", sans-serif;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    color: white;
+    padding-left: 200px;
+    /* background-color: blue; */
+}
+
+.third-container .title h1{
+    margin-bottom: -20px;
+    font-size: 80px;
+}
+
+.third-container .title p{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.third-container .title a{
+    font-family: "Kanit", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.third-container .title a:hover{
+    color: red;
+}
+
+/* ============================FOURTH====================== */
+
+.four-container .slides {
+    padding: 10px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.four-container .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.four-container .slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.four-container .title {
+    font-family: "Kanit", sans-serif;
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: end;
+    padding-right: 200px;
+
+}
+
+.four-container .title h1{
+    margin-bottom: -20px;
+    font-size: 80px;
+}
+
+.four-container .title p{
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.four-container .title a{
+    font-family: "Kanit", sans-serif;
+    color: white;
+    font-weight: 300;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.four-container .title a:hover{
+    color: red;
+}
+
+/* ============================FIFTH====================== */
+.fifth-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    gap: 40px;
+}
+
+.fifth-container .title{
+    width: 100%;
+    font-size: 23px;
+    /* background-color: blue; */
+}
+.fifth-container .title h1{
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.fifth-container .gallery-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    /* gap: 10px; */
+    /* background-color: white; */
+}
+.fifth-container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 50%;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+
+.fifth-container .card-image {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: "Kanit", sans-serif;
+}
+.fifth-container .card:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.fifth-container .card:hover .card-text {
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1347px){
+    .first-container .title h1{
+        margin-bottom: -20px;
+        font-size: 40px;
+    }
+    .slider-contain .slider-box{
+        margin-top: 20px;
+        position: relative;
+        height: 210px;
+        width: 500px;
+        /* margin-top: 40px; */
+        overflow: hidden;
+        /* border-radius: 50px; */
+    }
+
+    .third-container .title h1{
+        margin-bottom: -20px;
+        font-size: 60px;
+    }
+    
+    
+    .four-container .title h1{
+        margin-bottom: -20px;
+        font-size: 60px;
+    }
+    
+    .four-container .title p{
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+
+    .third-container .title {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        color: white;
+        padding-left: 100px;
+        /* background-color: blue; */
+    }
+
+    .four-container .title {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        color: white;
+        padding-right: 80px;
+        /* background-color: blue; */
+    }
+    
+}
+
+@media screen and (max-width: 1091px){
+    .first-container .title h1{
+        margin-bottom: -20px;
+        font-size: 40px;
+    }
+
+    .first-container .title p{
+        font-size: 15px;
+    }
+
+    .first-container .title a{
+        font-size: 15px
+    }
+    .slider-contain .slider-box{
+        margin-top: 20px;
+        position: relative;
+        height: 210px;
+        width: 500px;
+        /* margin-top: 40px; */
+        overflow: hidden;
+        /* border-radius: 50px; */
+    }
+
+    .third-container .title h1{
+        margin-bottom: -20px;
+        font-size: 45px;
+    }
+    
+    
+    .four-container .title h1{
+        margin-bottom: -20px;
+        font-size: 45px;
+    }
+    
+    .four-container .title p{
+        font-weight: 300;
+        font-size: 20px;
+        margin-bottom: -10px;
+    }
+
+    .third-container .title {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        color: white;
+        padding-left: 100px;
+        /* background-color: blue; */
+    }
+
+    .four-container .title {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        color: white;
+        padding-right: 80px;
+        /* background-color: blue; */
+    }
+    
+}
+
+
+@media screen and (max-width: 921px){
+    .first-container .title h1{
+        margin-bottom: -20px;
+        font-size: 30px;
+    }
+
+    .first-container .title p{
+        font-size: 12px;
+    }
+
+    .first-container .title a{
+        font-size: 12px
+    }
+    .slider-contain .slider-box{
+        margin-top: 20px;
+        position: relative;
+        height: 210px;
+        width: 400px;
+        margin-top: 50px;
+        overflow: hidden;
+        /* border-radius: 50px; */
+    }
+    .second-container h1{
+        font-size: 30px;
+    }
+    .second-container p{
+        font-size: 15px;
+    }
+    .second-container a{
+        font-size: 15px;
+    }
+ 
+    .slider-contain .slider-box img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+    
+
+    .third-container .title h1{
+        margin-bottom: -20px;
+        font-size: 35px;
+    }
+
+    .third-container .title p{
+        font-size: 15px;
+    }
+
+    .third-container .title a{
+        font-size: 15px;
+    }
+    
+    
+    .four-container .title h1{
+        margin-bottom: -20px;
+        font-size: 35px;
+    }
+    
+    .four-container .title p{
+        font-weight: 300;
+        font-size: 15px;
+        margin-bottom: -10px;
+    }
+
+    .four-container .title a{
+        font-size: 15px;
+    }
+
+    .third-container .title {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        color: white;
+        padding-left: 100px;
+        /* background-color: blue; */
+    }
+
+  
+    
+}
+
+@media screen and (max-width: 660px){
+    .first-container .title h1{
+        margin-bottom: -15px;
+        font-size: 20px;
+    }
+
+    .first-container .title p{
+        font-size: 10px;
+        margin-bottom: -23px;
+    }
+
+    .first-container .title a{
+
+        font-size: 10px
+    }
+    .slider-contain .slider-box{
+        margin-top: 20px;
+        position: relative;
+        height: 210px;
+        width: 400px;
+        margin-top: 50px;
+        overflow: hidden;
+        /* border-radius: 50px; */
+    }
+    .second-container .left-container{
+        text-align: center;
+        justify-content: center;
+        margin-right: -70px;
+        /* background-color: beige; */
+    }
+    .second-container h1{
+        font-size: 30px;
+    }
+    .second-container p{
+        font-size: 15px;
+    }
+    .second-container a{
+        font-size: 15px;
+    }
+ 
+    .slider-contain .slider-box img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+    }
+
+    .second-container .content{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .third-container .title h1{
+        margin-bottom: -20px;
+        font-size: 25px;
+    }
+
+    .third-container .title p{
+        font-size: 12px;
+        margin-bottom: -23px;
+    }
+
+    .third-container .title a{
+        font-size: 12px;
+    }
+    
+    
+    .four-container .title h1{
+        margin-bottom: -20px;
+        font-size: 25px;
+    }
+    
+    .four-container .title p{
+        font-weight: 300;
+        font-size: 12px;
+        margin-bottom: -23px;
+    }
+
+    .four-container .title a{
+        font-size: 12px;
+    }
+
+    .third-container .title {
+        font-family: "Kanit", sans-serif;
+        font-size: 30px;
+        position: absolute;
+        width: 100%;
+        color: white;
+        padding-left: 100px;
+        /* background-color: blue; */
+    }
+    .fifth-container{
+        text-align: center;
+        margin-top: 40px;
+    }
+    .fifth-container .title{
+        margin-bottom: -50px;
+    }
+
+    .fifth-container .gallery-container{
+        flex-wrap: wrap;
+    }
+
+  
+    
+}

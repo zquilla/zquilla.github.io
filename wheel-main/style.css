@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: kanit;
+}
+
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* margin: -8px; */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: 80px;
+    /* background-color: #333; */
+    /* position: sticky; */
+    /* background-color: blue; */
+    
+}
+
+.navbar .left-nav{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: "Kanit", sans-serif;
+    color: white;
+    /* background-color: red; */
+    font-size: 15px;
+}
+
+
+.navbar .right-nav{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+/* dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 0px;
+}
+
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Kanit", sans-serif;
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 50px; 
+    transition: 0.5s; 
+    
+}
+
+.dropbtn:hover{
+    background-color: rgb(161, 0, 0);
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Kanit", sans-serif;
+    transition: 0.5s;
+    /* border-radius: 10px; */
+}
+
+.dropdown-content a:hover {
+    color: red;
+}
+
+.show {
+    display: block;
+}
+
+body {
+    /* background: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(Assets/product_card/2024_venza.jpeg);
+}
+
+.wrapper {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, .5);
+    border-radius: 10px;
+}
+
+
+.wrapper .register-form {
+    padding: 50px;
+}
+
+.wrapper .register-form h2 {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+}
+
+.register-form .h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+.register-form .input {
+    background: red;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin-top: 28px;
+
+}
+
+.input input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.input input:is(:focus, :valid) {
+    border-bottom-color: rgb(110, 110, 110);
+}
+
+.input i{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: grey;
+}
+
+.input i.icon {
+    left: 0;
+}
+
+.input i.hide {
+    left: auto;
+    right: 0;
+    cursor: pointer;
+}
+
+.register-form .rmbpass {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.rmbpass input{
+    margin: 0 6px 0 3px;
+    accent-color: black;
+}
+
+.rmbpass label {
+    color: grey;
+    font-size: 15px;
+}
+
+.register-form a{
+    text-decoration: none;
+    color: grey;
+    font-size: 15px;
+}
+
+.register-form a:hover {
+    text-decoration: underline;
+}
+
+.btn{
+        width: 100%;
+        height: 40px;
+        background: grey;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 500px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        cursor: pointer;
+}
+
+.btn:hover{
+        background-color: rgb(116, 115, 115);
+}
+
+.register p {
+    font-size: 15px;
+    color: grey;
+}
+
+.register {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.gender {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.gender label {
+    font-size: 15px;
+    color: grey;
+}
+
+@media (max-width: 360px) {
+    .register-box {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+}
+
