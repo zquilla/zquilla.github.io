@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-color: black;
+  height: 4000px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: -8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+
+.navbar .left-nav{
+    margin-left: 20px;
+    display: flex;
+    gap: 50px;
+    font-family: "Kanit", sans-serif;
+    color: white;
+    /* background-color: red; */
+    font-size: 15px;
+}
+
+
+.navbar .right-nav{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+/* dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 0px;
+}
+
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Kanit", sans-serif;
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 50px; 
+    transition: 0.5s; 
+    
+}
+
+.dropbtn:hover{
+    background-color: rgb(161, 0, 0);
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(39, 39, 39);
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-top: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Kanit", sans-serif;
+    transition: 0.5s;
+    text-decoration: underline;
+    /* border-radius: 10px; */
+}
+
+.dropdown-content a:hover {
+    color: red;
+}
+
+.show {
+    display: block;
+}
+
+.all-cars-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  margin-top: -50px; /* Mengurangi jarak antara navbar dan judul */
+}
+
+.all-cars-container .title h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cars-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Tambahkan properti ini untuk mengatur elemen menjadi tengah */
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto; /* Tambahkan properti ini untuk mengatur elemen menjadi tengah */
+  }
+
+.car-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    padding: 10px; /* Mengurangi padding kontainer */
+    border-radius: 10px; /* Mengurangi radius sudut kontainer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 970px; /* Memperkecil lebar kontainer */
+  }
+
+  .car-card img {
+    width: 900px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.5s;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  
+  .car-card img:hover {
+    transform: scale(1.1);
+  }
+  
+  .car-card .image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .car-card .image-wrapper h3 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    z-index: 1;
+  }
+  
+.car-card .button {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.car-card .button a {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 5px;
+  background-color: gray;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.car-card .button a:hover {
+  background-color: red;
+}
+
+.footer-section {
+  padding: 10px;
+  margin-top: 30px;
+  height: auto;
+}
+
+.footer-container {
+  justify-content: space-around;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.footer-container h1 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.footer-container a {
+  color: rgb(160, 147, 147);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.footer-container img {
+  width: 30px;
+  transition: 0.5s;
+}
+
+.footer-container img:hover {
+  width: 33px;
+}
+
+.footer-container a:hover {
+  color: rgb(179, 0, 0);
+}
+
+.footer-container .logo-sosmed {
+  text-align: center;
+}
+
+.footer-container .pages {
+  text-align: center;
+}
+
+.footer-container .legal {
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  .car-card {
+      width: 80%;
+  }
+
+  .car-card img {
+      width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .left-nav, .left-nav .link-nav {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .car-card {
+      width: 90%;
+  }
+
+  .car-card img {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar .left-nav, .left-nav .link-nav {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .car-card {
+      width: 100%;
+  }
+
+  .car-card img {
+      width: 100%;
+  }
+}
